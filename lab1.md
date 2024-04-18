@@ -7,8 +7,8 @@
      
      ![Image](IMG1.png)
      
-     no error produced, remains in the current directory 
-     Absolute path before : /Users/ishitatakkar
+     cd with no commands does not do anything 
+     Absolute path before : `/Users/ishitatakkar`
      
 
 
@@ -17,16 +17,15 @@
 
      ![Image](IMG2.png)
      no error produced, changes current directory to lecture1
-     Absolute path before : /Users/ishitatakkar/
-     Absolute path after command :  /Users/ishitatakkar/lecture1
+     Absolute path before : `/Users/ishitatakkar/`
+     Absolute path after command :  `/Users/ishitatakkar/lecture1`
 
 
    * *With file as argument*
 
      ![Image](IMG3.png)
      error produced since cd works only to change directories and not to a file
-     Absolute path before : /Users/ishitatakkar/lecture1
-     Absolute path after command :  /Users/ishitatakkar/lecture1/Hello.java
+     Absolute path before : `/Users/ishitatakkar/lecture1`
 
 2. For `ls` command:
    
@@ -36,7 +35,7 @@
      
      Running ls with no arguments lists the contents of the current directory
      No error is produced
-     Absolute path before: /Users/ishitatakkar/
+     Absolute path before: `/Users/ishitatakkar/`
 
 
    * *With directory as argument*
@@ -57,20 +56,20 @@
    * *With no arguments*
      
      ![Image](IMG7.png)
-     no error produced
+     no error produced,does not do anything
      there is no output , it waits for input from standard input
-     Absolute path before: /Users/ishitatakkar/
+     Absolute path before: `/Users/ishitatakkar/`
 
    * *With directory as argument*
   
      ![Image](IMG8.png)
-     Absolute path before: /Users/ishitatakkar/
+     Absolute path before: `/Users/ishitatakkar/`
      attempts to concatenate the contents of a directory, which is not possible.
 
    * *With file as argument*
 
      ![Image](IMG9.png)
-     Absolute path before: /Users/ishitatakkar/
+     Absolute path before: `/Users/ishitatakkar/`
      displays the contents of the specified file 
      
      
