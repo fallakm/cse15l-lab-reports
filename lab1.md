@@ -35,7 +35,7 @@
      
      Running ls with no arguments lists the contents of the current directory
      No error is produced
-     Absolute path before: `/Users/ishitatakkar/`
+     Absolute path before: `/Users/ishitatakkar/lecture1`
 
 
    * *With directory as argument*
@@ -44,12 +44,14 @@
 
      Returns list of files and directories in the specified directory
      which is lecture1
+     Absolute path before: `/Users/ishitatakkar/lecture1`
 
    * *With file as argument*
 
      ![Image](IMG6.png)
 
      Running this command lists information about the specified file.
+     Absolute path before: `/Users/ishitatakkar/lecture1`
      
 3. For `cat` command:
 
@@ -58,18 +60,18 @@
      ![Image](IMG7.png)
      no error produced,does not do anything
      there is no output , it waits for input from standard input
-     Absolute path before: `/Users/ishitatakkar/`
+     Absolute path before: `/Users/ishitatakkar/lecture1`
 
    * *With directory as argument*
   
      ![Image](IMG8.png)
-     Absolute path before: `/Users/ishitatakkar/`
+     Absolute path before: `/Users/ishitatakkar/lecture1`
      attempts to concatenate the contents of a directory, which is not possible.
 
    * *With file as argument*
 
      ![Image](IMG9.png)
-     Absolute path before: `/Users/ishitatakkar/`
+     Absolute path before: `/Users/ishitatakkar/lecture1`
      displays the contents of the specified file 
      
      
