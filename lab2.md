@@ -110,7 +110,7 @@ to the ArrayList arr. The following local variables get updated:
 
 **SECOND OUTPUT OF `/add-message`:**
 
-![Image](picture.png)
+![Image](picture.jpg)
 
 
 
