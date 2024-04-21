@@ -17,6 +17,7 @@
    * *With directory as argument*
 
      ![Image](image2.png)
+     
      no error produced, changes the current directory to `lecture1`
      
      Absolute path before : `/Users/fallakmakhija/`
