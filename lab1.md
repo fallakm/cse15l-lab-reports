@@ -9,8 +9,10 @@
      
      ![Image](image1.png)
      
-     cd with no arguments does not do anything
-      
+     cd with no arguments returns you to the home directory
+     
+     Not an error
+     
      Absolute path before : `/Users/fallakmakhija`
      
 
