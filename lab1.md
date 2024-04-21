@@ -28,7 +28,9 @@
    * *With file as argument*
 
      ![Image](image3.png)
-     error produced since cd works only to change directories and not to a file
+
+     error produced since cd works only to change directories and not to file
+     So, `cd Hello.java` produces error
      
      Absolute path before : `/Users/fallakmakhija/lecture1`
      
@@ -38,48 +40,65 @@
    
    * *With no arguments*
 
-     ![Image](IMG4.png)
+     ![Image](image4.png)
      
      Running ls with no arguments lists the contents of the current directory
+     which is `lecture1`
+     
      No error is produced
-     Absolute path before: `/Users/ishitatakkar/lecture1`
+     
+     Absolute path before: `/Users/fallakmakhija/lecture1`
 
 
-   * *With directory as argument*
+   * *With directory `messages` as argument*
 
-     ![Image](img5.png)
+     ![Image](image5.png)
 
      Returns list of files and directories in the specified directory
-     which is lecture1
-     Absolute path before: `/Users/ishitatakkar/lecture1`
+     which is `messsages`
+     
+     No error produced
+     
+     Absolute path before: `/Users/fallakmakhija/lecture1`
 
-   * *With file as argument*
+   * *With file `Hello.java` as argument*
 
-     ![Image](IMG6.png)
+     ![Image](image6.png)
 
-     Running this command lists information about the specified file.
-     Absolute path before: `/Users/ishitatakkar/lecture1`
+     Running this command lists the name of the itself
+     In this case, it is `Hello.java`
+     
+     Absolute path before: `/Users/fallakmakhija/lecture1`
      
 3. For `cat` command:
 
    * *With no arguments*
      
-     ![Image](IMG7.png)
+     ![Image](image7.png)
+     
      no error produced,does not do anything
+     
      there is no output , it waits for input from standard input
-     Absolute path before: `/Users/ishitatakkar/lecture1`
+     
+     Absolute path before: `/Users/fallakmakhija/lecture1`
 
-   * *With directory as argument*
+   * *With directory `messages` as argument*
   
-     ![Image](IMG8.png)
-     Absolute path before: `/Users/ishitatakkar/lecture1`
+     ![Image](image8.png)
+  
+     Absolute path before: `/Users/fallakmakhija/lecture1`
+     
+     Error produced
+     
      attempts to concatenate the contents of a directory, which is not possible.
 
-   * *With file as argument*
+   * *With file `Hello.java` as argument*
 
-     ![Image](IMG9.png)
-     Absolute path before: `/Users/ishitatakkar/lecture1`
-     displays the contents of the specified file 
+     ![Image](image9.png)
+     
+     Absolute path before: `/Users/fallakmakhija/lecture1`
+     
+     displays/prints the contents of the specified file `Hello.java` 
      
      
    
