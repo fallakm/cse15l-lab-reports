@@ -7,7 +7,8 @@
      
      ![Image](image1.png)
      
-     cd with no arguments does not do anything 
+     cd with no arguments does not do anything
+      
      Absolute path before : `/Users/fallakmakhija`
      
 
@@ -17,7 +18,9 @@
 
      ![Image](image2.png)
      no error produced, changes the current directory to `lecture1`
+     
      Absolute path before : `/Users/fallakmakhija/`
+     
      Absolute path after command :  `/Users/fallakmakhija/lecture1`
 
 
@@ -25,7 +28,9 @@
 
      ![Image](image3.png)
      error produced since cd works only to change directories and not to a file
+     
      Absolute path before : `/Users/fallakmakhija/lecture1`
+     
      Absolute path after command : `/Users/fallakmakhija/lecture1`
 
 2. For `ls` command:
