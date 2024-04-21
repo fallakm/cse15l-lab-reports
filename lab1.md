@@ -2,7 +2,9 @@
 ***
 ## **Lab Report 1** 
 ***
+
 1. For `cd` command:
+   
    * *With no arguments*
      
      ![Image](image1.png)
@@ -20,7 +22,7 @@
      
      no error produced, changes the current directory to `lecture1`
      
-     Absolute path before : `/Users/fallakmakhija/`
+     Absolute path before : `/Users/fallakmakhija`
      
      Absolute path after command :  `/Users/fallakmakhija/lecture1`
 
@@ -36,7 +38,10 @@
      
      Absolute path after command : `/Users/fallakmakhija/lecture1`
 
-2. For `ls` command:
+
+     
+
+3. For `ls` command:
    
    * *With no arguments*
 
@@ -50,6 +55,7 @@
      Absolute path before: `/Users/fallakmakhija/lecture1`
 
 
+
    * *With directory `messages` as argument*
 
      ![Image](image5.png)
@@ -61,6 +67,8 @@
      
      Absolute path before: `/Users/fallakmakhija/lecture1`
 
+
+
    * *With file `Hello.java` as argument*
 
      ![Image](image6.png)
@@ -69,8 +77,10 @@
      In this case, it is `Hello.java`
      
      Absolute path before: `/Users/fallakmakhija/lecture1`
+
      
-3. For `cat` command:
+     
+4. For `cat` command:
 
    * *With no arguments*
      
@@ -81,6 +91,8 @@
      there is no output , it waits for input from standard input
      
      Absolute path before: `/Users/fallakmakhija/lecture1`
+     
+
 
    * *With directory `messages` as argument*
   
@@ -90,13 +102,17 @@
      
      Error produced
      
-     attempts to concatenate the contents of a directory, which is not possible.
+     attempts to concatenate the contents of a directory `messages`, which is not possible.
+     
+
 
    * *With file `Hello.java` as argument*
 
      ![Image](image9.png)
      
      Absolute path before: `/Users/fallakmakhija/lecture1`
+  
+     No error produced
      
      displays/prints the contents of the specified file `Hello.java` 
      
