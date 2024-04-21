@@ -155,4 +155,31 @@ The following local variables are updated:
 
 `allMessages`: This variable is in the ChatHistory method and is a string that starts as an empty string and accumulates all chat messages from the ArrayList arr. After the request, it will hold `jpolitz: Hello\n`and `yash: How%20are%20you`. In the `ChatServer` class, the main method accepts the port number as args[0].
 
+***
 
+
+### **PART2- SSH Keys**
+***
+
+**ls with the absolute path to the `private key` for your `SSH key` for logging into `ieng6`**
+
+![Image](pic1.png)
+
+**ls with the absolute path to the `public key` for your `SSH` key for logging into `ieng6`**
+
+![Image](pic2.png)
+
+**A terminal interaction where you log into your `ieng6` account without being asked for a password**
+
+![Image](pic3.png)
+
+***
+
+### **PART3- What I Learnt**
+***
+
+During week2, I learnt about URLs and the different parts of a `URL`. I even learnt to create web servers.
+Learning how to updater web pages using paths and queries was interesting. I also learnt about what a `port` is and what
+ports people usually use to build websites(80 or 443).
+Knowing and using the `curl` command was great.
+In week3, I learnt about `ssh` keys and their usage in accessing into my course-specific account.
