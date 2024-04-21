@@ -5,27 +5,28 @@
 1. For `cd` command:
    * *With no arguments*
      
-     ![Image](IMG1.png)
+     ![Image](image1.png)
      
-     cd with no commands does not do anything 
-     Absolute path before : `/Users/ishitatakkar`
+     cd with no arguments does not do anything 
+     Absolute path before : `/Users/fallakmakhija`
      
 
 
 
    * *With directory as argument*
 
-     ![Image](IMG2.png)
-     no error produced, changes current directory to lecture1
-     Absolute path before : `/Users/ishitatakkar/`
-     Absolute path after command :  `/Users/ishitatakkar/lecture1`
+     ![Image](image2.png)
+     no error produced, changes the current directory to `lecture1`
+     Absolute path before : `/Users/fallakmakhija/`
+     Absolute path after command :  `/Users/fallakmakhija/lecture1`
 
 
    * *With file as argument*
 
-     ![Image](IMG3.png)
+     ![Image](image3.png)
      error produced since cd works only to change directories and not to a file
-     Absolute path before : `/Users/ishitatakkar/lecture1`
+     Absolute path before : `/Users/fallakmakhija/lecture1`
+     Absolute path after command : `/Users/fallakmakhija/lecture1`
 
 2. For `ls` command:
    
