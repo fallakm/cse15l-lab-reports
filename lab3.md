@@ -2,7 +2,7 @@
 
 ## Part 1 - Bugs 
 
-- A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
+1. A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
 
     ```
     @Test 
@@ -14,7 +14,7 @@
     ```
 
 
-- An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
+2. An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
 
 
     ```
@@ -25,14 +25,14 @@
         assertArrayEquals(new int[]{ 2 }, input1);
 	}
     ```
-- The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
+3. The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
 
 
 
 
 
 
-d) Code before fixing bug:
+4. a) Code before fixing bug:
 ```
 static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
@@ -41,7 +41,7 @@ static void reverseInPlace(int[] arr) {
   }
 ```
 
-   Code after fixing bug:
+4. b)  Code after fixing bug:
 ```
 static void reverseInPlace(int[] arr) {
     int hold;
