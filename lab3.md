@@ -68,7 +68,7 @@ I will explore the `grep` command and what it does.
 As we learnt in class, `grep` is used for searching and manipulating text patterns within files.
 
 
-### Option 1: -i (case-insensitive search)
+### Option 1: -i (ignore-case)
 
 Source: [Geeks for Geeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
 
@@ -148,7 +148,9 @@ grep -r "string-name" files/directories
 > If file/directory is not provided, the `grep -r` command will search for pattern in the current directory
 > If we write `grep -r "string" * ` then it will search for the specified string across all files and directories.
 > We will test this command by using `grep -r "chapter" ` in the working directory `911report` which is our
-> current directory.The result outputs:
+> current directory.
+> COMMAND will be `grep -r "chapter"`
+> The result outputs:
 
 
 ```
@@ -260,4 +262,137 @@ fallakmakhija@Fallaks-MacBook-Pro technical % grep -r "health" ./biomed/1471-245
 ./biomed/1471-2458-3-20.txt:        for healthcare workers are similar to those of
 ./biomed/1471-2458-3-20.txt:        rumor mill) are important in healthcare workers'
 ./biomed/1471-2458-3-20.txt:        healthcare workers about this vaccine.
+```
+
+### Option 3: -o (only-matching)
+
+Source: [Geeks for Geeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+
+```
+grep -o pattern filename
+
+```
+> Useful as it prints only the matched parts of a matching line, with each such part on a separate output line.
+> Let's search for the term `threat` in the file `chapter-11.txt` of the directory `911report` with `-i` as well to
+> remove case sensitivity
+> We write the command `grep -oi threat chapter-11.txt`
+> This is the follwing output:
+
+
+```
+fallakmakhija@Fallaks-MacBook-Pro 911report % grep -oi threat chapter-11.txt
+threat
+threat
+threat
+threat
+threat
+threat
+threat
+threat
+threat
+Threat
+Threat
+threat
+threat
+threat
+threat
+threat
+threat
+threat
+threat
+Threat
+threat
+threat
+threat
+threat
+threat
+threat
+threat
+threat
+threat
+threat
+threat
+threat
+threat
+threat
+threat
+threat
+threat
+threat
+threat
+threat
+threat
+threat
+```
+
+> We can also use this command but with `wc` to count the number of words
+> This time we will count the number of times the word `health` appears in file `1468-6708-3-1.txt` of
+> the `biomed` directory.
+> Example2 : `grep -oi health 1468-6708-3-1.txt | wc`
+
+```
+fallakmakhija@Fallaks-MacBook-Pro biomed % grep -o health 1468-6708-3-1.txt | wc
+      50      50     350
+```
+### Option 4: -v (invert-match)
+
+Source: [Geeks for Geeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+```
+grep -v "pattern" file.txt
+```
+
+> Used to display the lines that are not matched with the specified search string pattern using the `-v` option
+> It's useful for filtering out unwanted lines from the output.
+> These options provide enhanced functionality to the grep command,
+> allowing for more efficient and flexible text searches in files and directories.
+> **Example1** : We display the lines not containing `The` in the file `chapter-13.1.txt` of the directory `911report`
+> Command: `grep -v "The" chapter-13.1.txt`
+>
+```
+fallakmakhija@Fallaks-MacBook-Pro 911report % grep -v "The" chapter-13.1.txt
+
+            HOW TO DO IT? A DIFFERENT WAY OF ORGANIZING THE GOVERNMENT
+            As presently configured, the national security institutions of the U.S. government
+                confronts a very different world today. Instead of facing a few very dangerous
+                adversaries, the United States confronts a number of less visible challenges that
+                surpass the boundaries of traditional nation-states and call for quick, imaginative,
+                and agile responses.
+                That is now the job of the generation that experienced 9/11. Those attacks showed,
+                emphatically, that ways of doing business rooted in a different era are just not
+                good enough. Americans should not settle for incremental, ad hoc adjustments to a
+                system designed generations ago for a world that no longer exists.
+            We recommend significant changes in the organization of the government. We know that
+                the quality of the people is more important than the quality of the wiring diagrams.
+                Some of the saddest aspects of the 9/11 story are the outstanding efforts of so many
+                individual officials straining, often without success, against the boundaries of the
+                them more effectively, achieving unity of effort. We offer five major
+                recommendations to do that:
+            
+                unifying strategic intelligence and operational planning against Islamist
+                    terrorists across the foreign-domestic divide with a National Counterterrorism
+                    Center;
+                unifying the intelligence community with a new National Intelligence Director;
+                unifying the many participants in the counterterrorism effort and their
+                    knowledge in a network-based information-sharing system that transcends
+                    traditional governmental boundaries;
+                unifying and strengthening congressional oversight to improve quality and
+                    accountability; and
+                strengthening the FBI and homeland defenders.
+            
+            UNITY OF EFFORT ACROSS THE FOREIGN-DOMESTIC DIVIDE
+            Joint Action
+            Much of the public commentary about the 9/11 attacks has dealt with "lost
+                characterized as problems of "watchlisting," of "information sharing," or of
+                "connecting the dots." In chapter 11 we explained that these labels are too narrow.
+                       was more episodic.
+```
+> Example2: We can combine the `-v` option with `-i` and `wc` to count the number of
+> lines, words, and characters in `chapter-1.txt` present in the directory `911report`
+> that do not contain the letter `I`.
+> Command used : `grep -vi "I" chapter-1.txt|wc`
+> Following is the output:
+
+```
+fallakmakhija@Fallaks-MacBook-Pro 911report % grep -vi "I" chapter-1.txt|wc
+     384      67     801
 ```
