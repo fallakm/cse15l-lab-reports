@@ -313,41 +313,37 @@ threat
 threat
 threat
 threat
-threat
-threat
-threat
-threat
-threat
-threat
-threat
-threat
-threat
-threat
+
 ```
 
 > We can also use this command but with `wc` to count the number of words
 > This time we will count the number of times the word `health` appears in file `1468-6708-3-1.txt` of
 > the `biomed` directory.
-> Example2 : `grep -oi health 1468-6708-3-1.txt | wc`
+
+Example 2 : `grep -oi health 1468-6708-3-1.txt | wc`
 
 ```
 fallakmakhija@Fallaks-MacBook-Pro biomed % grep -o health 1468-6708-3-1.txt | wc
       50      50     350
 ```
+
 ### Option 4: -v (invert-match)
 
 Source: [Geeks for Geeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+
 ```
 grep -v "pattern" file.txt
 ```
+
 
 > Used to display the lines that are not matched with the specified search string pattern using the `-v` option
 > It's useful for filtering out unwanted lines from the output.
 > These options provide enhanced functionality to the grep command,
 > allowing for more efficient and flexible text searches in files and directories.
-> **Example1** : We display the lines not containing `The` in the file `chapter-13.1.txt` of the directory `911report`
-> Command: `grep -v "The" chapter-13.1.txt`
->
+ **Example1** : We display the lines not containing `The` in the file `chapter-13.1.txt` of the directory `911report`
+ - Command: `grep -v "The" chapter-13.1.txt`
+   
+
 ```
 fallakmakhija@Fallaks-MacBook-Pro 911report % grep -v "The" chapter-13.1.txt
 
@@ -376,21 +372,18 @@ fallakmakhija@Fallaks-MacBook-Pro 911report % grep -v "The" chapter-13.1.txt
                     knowledge in a network-based information-sharing system that transcends
                     traditional governmental boundaries;
                 unifying and strengthening congressional oversight to improve quality and
-                    accountability; and
-                strengthening the FBI and homeland defenders.
             
-            UNITY OF EFFORT ACROSS THE FOREIGN-DOMESTIC DIVIDE
-            Joint Action
-            Much of the public commentary about the 9/11 attacks has dealt with "lost
-                characterized as problems of "watchlisting," of "information sharing," or of
-                "connecting the dots." In chapter 11 we explained that these labels are too narrow.
-                       was more episodic.
 ```
-> Example2: We can combine the `-v` option with `-i` and `wc` to count the number of
+
+
+**Example 2** 
+
+>  We can combine the `-v` option with `-i` and `wc` to count the number of
 > lines, words, and characters in `chapter-1.txt` present in the directory `911report`
 > that do not contain the letter `I`.
 > Command used : `grep -vi "I" chapter-1.txt|wc`
 > Following is the output:
+
 
 ```
 fallakmakhija@Fallaks-MacBook-Pro 911report % grep -vi "I" chapter-1.txt|wc
