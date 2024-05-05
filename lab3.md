@@ -25,33 +25,34 @@
         assertArrayEquals(new int[]{ 2 }, input1);
 	}
     ```
-3. The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
+3. The symptom, as the output of running the tests (a screenshot of running JUnit with at least the two inputs above)
    ![Symptom](symptom.png)
 
 
 
 
 
-
-5. a) Code before fixing bug:
+4. a) Code before fixing bug:
 ```
 static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
       arr[i] = arr[arr.length - i - 1];
     }
-  }
+}
 ```
 
 4. b)  Code after fixing bug:
 ```
 static void reverseInPlace(int[] arr) {
-    int hold;
-    for(int i = 0; i < (arr.length/2); i += 1) {
-      hold = arr[i];
+    int temp;
+    for(int i = 0; i < arr.length/2; i += 1) {
+      temp = arr[i];
       arr[i] = arr[arr.length - i - 1];
-      arr[arr.length - i - 1] = hold;
+      arr[arr.length - i - 1] = temp;
     }
-  }
+}
 ```
 
-For the reverseInPlace() method, it was returning the original inputted array, not the new array that should be used for the reversed version of the input. Hence, a variable was created to hold the current value at the index and change the parameters for the for loop to stop once i is less than half of array’s length.
+5. **Briefly describe why the fix addresses the issue**
+   
+For the reverseInPlace() method, it was returning the original inputted array, not the new array that should be used for the reversed version of the input. The values are lost on changing the current array so a temporary array `temp` has to be created to hold the values of the current array and then assign it back to the original array and also change the parameters for the `for` loop to stop once i is less than half of array’s length.It changes the last elements before they are reversed.
