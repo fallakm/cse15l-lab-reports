@@ -26,13 +26,14 @@
 	}
     ```
 3. The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
+   ![Symptom](symptom.png)
 
 
 
 
 
 
-4. a) Code before fixing bug:
+5. a) Code before fixing bug:
 ```
 static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
