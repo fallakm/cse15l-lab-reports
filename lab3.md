@@ -341,7 +341,7 @@ grep -v "pattern" file.txt
 > These options provide enhanced functionality to the grep command,
 > allowing for more efficient and flexible text searches in files and directories.
  **Example1** : We display the lines not containing `The` in the file `chapter-13.1.txt` of the directory `911report`
- - Command: `grep -v "The" chapter-13.1.txt`
+ **Command**: `grep -v "The" chapter-13.1.txt`
    
 
 ```
