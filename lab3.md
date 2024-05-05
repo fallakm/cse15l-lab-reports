@@ -346,7 +346,6 @@ grep -v "pattern" file.txt
 
 ```
 fallakmakhija@Fallaks-MacBook-Pro 911report % grep -v "The" chapter-13.1.txt
-
             HOW TO DO IT? A DIFFERENT WAY OF ORGANIZING THE GOVERNMENT
             As presently configured, the national security institutions of the U.S. government
                 confronts a very different world today. Instead of facing a few very dangerous
@@ -374,6 +373,7 @@ fallakmakhija@Fallaks-MacBook-Pro 911report % grep -v "The" chapter-13.1.txt
                 unifying and strengthening congressional oversight to improve quality and
             
 ```
+
 
 
 **Example 2** 
