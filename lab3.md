@@ -71,6 +71,7 @@ As we learnt in class, `grep` is used for searching and manipulating text patter
 ### Option 1: -i (ignore-case)
 
 Source: [Geeks for Geeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
 ```
 grep -i "pattern" file.txt
@@ -139,6 +140,7 @@ User biomed $ grep -i tree 1468-6708-3-1.txt
 ### Option 2: -r (Recursive search)
 
 Source: [DigitalOcean](https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix)
+https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix
 
 ```
 grep -r "string-name" files/directories
@@ -267,6 +269,7 @@ fallakmakhija@Fallaks-MacBook-Pro technical % grep -r "health" ./biomed/1471-245
 ### Option 3: -o (only-matching)
 
 Source: [Geeks for Geeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
 ```
 grep -o pattern filename
@@ -330,6 +333,7 @@ fallakmakhija@Fallaks-MacBook-Pro biomed % grep -o health 1468-6708-3-1.txt | wc
 ### Option 4: -v (invert-match)
 
 Source: [Geeks for Geeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
 ```
 grep -v "pattern" file.txt
