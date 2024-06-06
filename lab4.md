@@ -18,7 +18,7 @@ Keys Pressed:
 Explanation:
 I git cloned the repository i had forked in an earlier step onto the ieng6 server I am now logged into.
 
-![Image](Lab4Step5.png)
+![Image](Lab4pic1.png)
 
 **Step 6:**
 
