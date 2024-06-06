@@ -1,4 +1,4 @@
-# Putting it all together# Putting it all together
+# LAB REPORT 5- Putting it all together
 
 ## Step 1: Debugging Scenario
 **Design a debugging scenario**
