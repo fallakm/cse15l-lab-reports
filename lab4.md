@@ -18,7 +18,7 @@ Keys Pressed:
 Explanation:
 I git cloned the repository i had forked in an earlier step onto the ieng6 server I am now logged into.
 
-![Image](Lab4pic1.png)
+![Image](lab4pic1.png)
 
 **Step 6:**
 
@@ -29,7 +29,7 @@ Keys Pressed:
 Explanation:
 I first changed the directory to be lab7 and then I ran the test script using `bash test.sh` and received the expected results.
 
-![Image](Lab4Step6.png)
+![Image](lab4pic2.png)
 
 **Step 7:**
 
