@@ -53,7 +53,7 @@ For `testMerge`, I found the problem loop by looking at the line number in the J
 
 For `testFilter`, I noticed that the method was adding the desired elements to the wrong position. So, I just rewrote it so that it added the elements to the end instead of the beginning of the returned `ArrayList`. 
 
-![Image](lab5pic2.png)
+![Image](Image.png)
 
 ### The setup
 
@@ -169,7 +169,7 @@ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnit
 
 `bash test.sh`
 
-![Image](lab5pic1.png)
+![Image](Image1.png)
 
 #### What to edit to fix the bug
 
